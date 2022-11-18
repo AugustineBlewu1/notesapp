@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageListComponent } from './page-list/page-list.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
+import { NotesAppComponent } from './notes-app/notes-app.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageListComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    NotesAppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

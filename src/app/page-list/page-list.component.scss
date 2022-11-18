@@ -1,0 +1,25 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+
+
+    .search-bar-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.notes-list {
+    margin-top: 35px;
+
+}
+
+app-notes-app {
+    display: block;
+    margin-bottom: 25px;
+}
