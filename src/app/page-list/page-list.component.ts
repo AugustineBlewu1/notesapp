@@ -1,3 +1,5 @@
+import { NotesService } from './../shared/notes.service';
+import { Note } from './../../shared/note.module';
 import { Component, OnInit } from '@angular/core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 @Component({
@@ -7,11 +9,13 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 })
 export class PageListComponent implements OnInit {
   faSearch = faSearch;
-  cardTitle = 'Card Title';
+  notes: Note[] = new Array<Note>();
 
-  constructor() { }
+  constructor(private notesService : NotesService) { }
 
   ngOnInit(): void {
+
+   this.notes =  this.notesService.getAll();
   }
 
 }

@@ -7,18 +7,23 @@ import { PageListComponent } from './page-list/page-list.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { NotesAppComponent } from './notes-app/notes-app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NotesDetailsComponent } from './notes-details/notes-details.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageListComponent,
     MainLayoutComponent,
-    NotesAppComponent
+    NotesAppComponent,
+    NotesDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule
+    ,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

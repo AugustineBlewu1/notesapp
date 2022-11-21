@@ -10,11 +10,11 @@ export class NotesAppComponent implements OnInit {
   @Input() title!: string;
   @Input() body!: string;
 
-  @ViewChild('truncator')
+  @ViewChild('truncator', { static: true })
 
   truncator!: ElementRef<HTMLElement>;
 
-  @ViewChild('bodyText') bodyText!: ElementRef<HTMLElement>;
+  @ViewChild('bodyText', { static: true }) bodyText!: ElementRef<HTMLElement>;
 
   constructor(private render: Renderer2) { }
 

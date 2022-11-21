@@ -11,10 +11,12 @@
     </div>
 
     <div class="notes-list">
-        <app-notes-app title="cardTitle" [body]="'This is title This is title'">  </app-notes-app>
-        <app-notes-app>  </app-notes-app>
-        <app-notes-app>  </app-notes-app>
-        <app-notes-app>  </app-notes-app>
+        <!-- <app-notes-app [title]="" [body]="bodyText">  </app-notes-app> -->
+        <app-notes-app *ngFor="let note of notes" [title]="note.title" [body]="note.body">  </app-notes-app>
     </div>
+
+    <button class="button floating-add-button is-primary" routerLink="new">
+      + Add Note
+    </button>
 
 </div>
